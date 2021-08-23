@@ -1,0 +1,37 @@
+@import "navbar.css";
+@import "main.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --blue: #26ace3;
+  --light-blue: #6ec8f2;
+  --more-blue: #2591bb;
+  --almost-white: #eff7fb;
+  --dark-blue: #1c4973;
+  --grey: #5c728a;
+  --orange: #ebb62d;
+  --more-orange: #d0a538;
+  --dark-red: #8a2c0f;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

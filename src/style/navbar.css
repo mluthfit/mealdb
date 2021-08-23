@@ -1,0 +1,144 @@
+.dflex {
+  display: flex;
+}
+
+nav {
+  padding: 1rem;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+nav.box-shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: fixed;
+}
+
+.filter {
+  position: relative;
+}
+
+.filter button,
+.search input,
+.search button {
+  border: none;
+  border: 2px solid var(--blue);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.filter button {
+  padding: 0.5rem 1.7rem;
+  margin: 0 0.5rem;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 5px;
+}
+
+.filter button:hover,
+.search button:hover {
+  background-color: var(--more-blue);
+  border-color: var(--more-blue);
+}
+
+.filter-box {
+  position: absolute;
+  display: none;
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-width: 700px;
+  width: 90%;
+  border-radius: 5px;
+  padding: 0 2rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+  rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  flex-direction: column;
+  top: 55px;
+  overflow: auto;
+  max-height: 80vh;
+}
+
+div.category,
+div.area {
+  margin: 1rem 0;
+}
+
+div.category > span,
+div.area > span {
+  font-size: 1.3rem;
+  color: var(--grey);
+  font-weight: bold;
+}
+
+.warp {
+  flex-wrap: wrap;
+}
+
+.list > span {
+  padding: 0.5rem 1rem;
+  margin-right: 0.4rem;
+  border-radius: 5px;
+  margin-top: 0.4rem;
+}
+
+.category-list > span {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+}
+
+.category-list > span:hover {
+  background-color: var(--blue);
+}
+
+.area-list > span {
+  background-color: var(--orange);
+  color: var(--dark-red);
+}
+
+.area-list > span:hover {
+  background-color: var(--more-orange);
+}
+
+.list > span:hover {
+  cursor: pointer;
+}
+
+.search {
+  width: 340px;
+}
+
+.search input {
+  padding: 0.5rem 1rem;
+  outline: none;
+  width: calc(100% - 40px);
+}
+
+.search button {
+  padding: 0.5rem;
+  background-color: var(--blue);
+  color: white;
+}
+
+@media screen and (max-width: 350px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .search {
+    width: auto;
+  }
+  
+  .filter button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .search input,
+  .search button {
+    width: 100%;
+    max-width: none;
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
